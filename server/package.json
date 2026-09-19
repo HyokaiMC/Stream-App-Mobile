@@ -1,0 +1,12 @@
+{
+  "name": "streamdeck-server",
+  "version": "1.0.0",
+  "description": "Serveur local qui execute des actions PC declenchees depuis l'app mobile Stream Deck",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

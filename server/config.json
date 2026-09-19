@@ -1,0 +1,30 @@
+{
+  "token": "change-moi-en-un-secret-perso",
+  "port": 4567,
+  "buttons": [
+    {
+      "id": "open-notepad",
+      "label": "Notepad",
+      "type": "open_app",
+      "target": "notepad.exe"
+    },
+    {
+      "id": "open-downloads",
+      "label": "Dossier Downloads",
+      "type": "open_folder",
+      "target": "C:\\Users\\Corentin\\Downloads"
+    },
+    {
+      "id": "open-youtube",
+      "label": "YouTube",
+      "type": "open_url",
+      "target": "https://youtube.com"
+    },
+    {
+      "id": "close-notepad",
+      "label": "Fermer Notepad",
+      "type": "close_app",
+      "target": "notepad.exe"
+    }
+  ]
+}

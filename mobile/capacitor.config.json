@@ -1,0 +1,11 @@
+{
+  "appId": "com.corentin.streamdeck",
+  "appName": "Stream Deck",
+  "webDir": "www",
+  "server": {
+    "cleartext": true
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}

@@ -1,0 +1,4 @@
+node_modules/
+mobile/android/
+mobile/ios/
+*.log

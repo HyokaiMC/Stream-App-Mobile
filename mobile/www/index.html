@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Stream Deck</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Stream Deck</h1>
+    <button id="settings-btn" aria-label="Parametres">&#9881;</button>
+  </header>
+
+  <main>
+    <div id="status" class="status"></div>
+    <div id="grid" class="grid"></div>
+  </main>
+
+  <dialog id="settings-dialog">
+    <form id="settings-form">
+      <h2>Connexion au PC</h2>
+      <label>Adresse IP + port du PC
+        <input type="text" id="host-input" placeholder="192.168.1.42:4567" required />
+      </label>
+      <label>Token
+        <input type="text" id="token-input" placeholder="change-moi-en-un-secret-perso" required />
+      </label>
+      <div class="dialog-actions">
+        <button type="button" id="cancel-btn">Annuler</button>
+        <button type="submit">Enregistrer</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
