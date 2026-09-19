@@ -9,6 +9,14 @@ const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 const app = express();
 app.use(express.json());
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'X-Auth-Token, Content-Type');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  if (req.method === 'OPTIONS') return res.sendStatus(204);
+  next();
+});
+
 function checkToken(req, res, next) {
   const token = req.header('X-Auth-Token');
   if (!token || token !== config.token) {
